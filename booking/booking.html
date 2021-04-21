@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!------------------------------------------------------ Charmi,mitali and Mayank----------------------------------------------------------------->
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation request</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="booking.js"></script>
+</head>
+<body>
+    <header class="header">
+                <b>Incredible <span>!</span>ndia </b>
+        </header>
+    <nav>
+        <div id="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../destination/destination.html">Destinations</a>
+            <a href="../faq/faq.html">FAQ</a>
+            <a href="booking.html" class="active">Bookings</a>
+        </div>
+    </nav>
+    <header>
+        <div id="background"></div>
+    </header>
+    <div class="container">
+        <h1>Book now and get discount of upto 30%. Offer valid till May 1, 2020.</h1>
+        <ul>
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
+        </ul>
+    </div>
+    <div id="wrapper">
+        <h1>Booking Request</h1>
+        <form action="response.html" method="get" name="reservation_form" id="reservation_form">
+            <fieldset>
+                <legend>General Information</legend>
+                <label for="nights">Nights:</label>
+                <input type="text" name="nights" id="nights">
+                <span>*</span><br>
+                <label for="arrival_date">Arrival date:</label>
+                <input type="text" name="arrival_date" id="arrival_date">
+                <span>*</span><br>
+                <label>Adults:</label>
+                <select name="adults" id="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br>
+                <label>Children:</label>
+                <select name="children" id="children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>Room type:</label>
+                <input type="radio" name="room" id="standard" class="left" checked>Standard&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="room" id="business" class="left">Business&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="room" id="suite" class="left last">Suite<br>
+                <label>Bed type:</label>
+                <input type="radio" name="bed" id="king" class="left" checked>King&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="bed" id="double" class="left last">Double Double<br>
+                <input type="checkbox" name="smoking" id="smoking">Smoking<br>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <span>*</span><br>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <span>*</span><br>
+                <label for="phone">Phone:</label>
+                <input type="text" name="phone" id="phone" placeholder="999-999-9999">
+                <span>*</span><br>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit Request"><br>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>JavaScript Group Productivity Web App Project &copy; 2020</p>
+    </footer>
+</body></html>
